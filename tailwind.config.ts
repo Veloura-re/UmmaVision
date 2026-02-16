@@ -49,11 +49,11 @@ const config: Config = {
                 },
                 "glow-cycle": {
                     "0%, 100%": {
-                        opacity: "0.05",
+                        opacity: "0.4",
                         transform: "scale(1)",
                     },
                     "50%": {
-                        opacity: "0.15",
+                        opacity: "0.8",
                         transform: "scale(1.1)",
                     },
                 },
