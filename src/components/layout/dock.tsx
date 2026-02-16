@@ -8,15 +8,16 @@ import { Logo } from "@/components/brand/logo";
 
 export function Dock() {
     return (
-        <div className="fixed z-50 
-            lg:left-4 lg:top-1/2 lg:-translate-y-1/2 lg:flex-col lg:bottom-auto
-            bottom-6 left-1/2 -translate-x-1/2 flex-row flex items-center gap-6">
+        <nav className="fixed z-[9999] 
+            lg:left-6 lg:top-1/2 lg:-translate-y-1/2 lg:bottom-auto
+            bottom-8 left-1/2 -translate-x-1/2 
+            flex lg:flex-col flex-row items-center gap-4 w-max max-w-[90vw]">
 
-            <Link href="/" className="mb-2 hidden lg:block">
-                <Logo size={50} />
+            <Link href="/" className="mb-2 hidden lg:block hover:scale-110 transition-transform duration-300">
+                <Logo size={48} />
             </Link>
 
-            <div className="flex lg:flex-col flex-row items-center gap-4 rounded-full bg-white/80 p-3 lg:py-6 backdrop-blur-md border border-slate-200 shadow-[0_0_20px_rgba(0,0,0,0.1)]">
+            <div className="flex lg:flex-col flex-row items-center gap-2 lg:gap-4 rounded-full bg-white/90 p-2 lg:p-3 lg:py-6 backdrop-blur-lg border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
                 <DockCloud>
                     <DockIcon href="/" icon={Home} label="Home" />
                     <DockIcon href="/about" icon={Info} label="About" />
@@ -26,7 +27,7 @@ export function Dock() {
                     <DockIcon href="/contact" icon={Mail} label="Contact" />
                 </DockCloud>
             </div>
-        </div>
+        </nav>
     );
 }
 
