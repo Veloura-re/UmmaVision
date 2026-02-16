@@ -44,8 +44,8 @@ const config: Config = {
             },
             keyframes: {
                 "pulse-glow": {
-                    "0%, 100%": { opacity: "1", filter: "brightness(1.2) drop-shadow(0 0 5px currentColor)" },
-                    "50%": { opacity: ".8", filter: "brightness(1) drop-shadow(0 0 2px currentColor)" },
+                    "0%, 100%": { opacity: "1" },
+                    "50%": { opacity: ".6" },
                 },
                 "glow-cycle": {
                     "0%, 100%": {
