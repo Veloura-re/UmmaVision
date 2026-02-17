@@ -35,7 +35,7 @@ export default function Home() {
                 { label: "Years Exp", value: "15+", icon: BookOpen, color: "text-slate-600", glow: "group-hover:shadow-[0_0_20px_rgba(148,163,184,0.2)]" },
               ].map((stat, idx) => (
                 <FadeIn key={idx} variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
-                  <Card className={`bg-white/40 backdrop-blur-xl border border-white/50 p-6 flex flex-col items-center justify-center text-center shadow-lg transition-all duration-500 group ${stat.glow} hover:-translate-y-2 h-full`}>
+                  <Card className={`bg-white/70 backdrop-blur-md border border-white/50 p-6 flex flex-col items-center justify-center text-center shadow-lg transition-all duration-500 group ${stat.glow} hover:-translate-y-2 h-full`}>
                     <div className={`p-4 rounded-2xl bg-white shadow-sm mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500`}>
                       <stat.icon className="h-8 w-8 transition-transform group-hover:scale-110" />
                     </div>
@@ -72,7 +72,7 @@ export default function Home() {
                 ].map((item, idx) => (
                   <FadeIn key={idx} direction={item.align === 'left' ? "right" : "left"} className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0 relative`}>
                     <div className={`md:w-[45%] ${item.align === 'right' ? 'md:order-2' : ''}`}>
-                      <div className={`bg-white/40 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/50 shadow-xl hover:shadow-2xl transition-all duration-500 group relative`}>
+                      <div className={`bg-white/70 backdrop-blur-md p-10 rounded-[2.5rem] border border-white/50 shadow-xl hover:shadow-2xl transition-all duration-500 group relative`}>
                         <div className="absolute top-6 right-8 text-[10px] font-mono font-bold tracking-widest text-primary/40 uppercase">{item.time}</div>
                         <span className="text-4xl mb-6 block group-hover:scale-125 transition-transform duration-500">{item.icon}</span>
                         <h4 className="text-2xl font-heading font-black text-slate-900 mb-4 uppercase tracking-tighter">{item.title}</h4>
@@ -161,7 +161,7 @@ export default function Home() {
                 { title: "SECONDARY", age: "12-18 YEARS", desc: "Rigorous preparation for university and leadership in an ever-changing world.", color: "text-secondary", border: "border-secondary/20", glow: "hover:shadow-secondary/10" },
               ].map((program, idx) => (
                 <FadeIn key={idx}>
-                  <div className={`bg-white/60 backdrop-blur-md p-10 rounded-3xl shadow-lg border ${program.border} group ${program.glow} hover:shadow-2xl transition-all duration-500 relative overflow-hidden h-full`}>
+                  <div className={`bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-lg border ${program.border} group ${program.glow} hover:shadow-2xl transition-all duration-500 relative overflow-hidden h-full`}>
                     <div className={`absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-white/10 to-transparent rounded-full group-hover:scale-150 transition-transform duration-700`} />
 
                     <span className={`text-xs font-mono font-bold tracking-[0.2em] ${program.color} opacity-60 mb-2 block`}>{program.age}</span>
@@ -203,7 +203,7 @@ export default function Home() {
                 { title: "Global Vision", desc: "Understanding world systems with a deeply rooted moral compass.", icon: "🌍", color: "from-primary/10 to-transparent" }
               ].map((skill, idx) => (
                 <FadeIn key={idx}>
-                  <Card className="bg-white/40 backdrop-blur-xl border border-white/50 p-10 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-700 group relative overflow-hidden h-full">
+                  <Card className="bg-white/70 backdrop-blur-md border border-white/50 p-10 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-700 group relative overflow-hidden h-full">
                     <div className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
                     <span className="text-4xl mb-6 block group-hover:scale-125 transition-transform duration-500 relative z-10">{skill.icon}</span>
                     <h4 className="text-xl font-heading font-black text-slate-900 mb-4 uppercase tracking-tighter relative z-10">{skill.title}</h4>
@@ -236,7 +236,7 @@ export default function Home() {
                 { name: "The Khan Family", quote: "We wanted a sanctuary where our values were respected and our children were challenged. We found exactly that at Ummah Vision.", role: "Primary School Parents" }
               ].map((item, idx) => (
                 <FadeIn key={idx}>
-                  <div className="bg-white/50 backdrop-blur-xl p-10 rounded-[3rem] border border-white/50 shadow-xl hover:shadow-2xl transition-all duration-500 group flex flex-col justify-between h-full">
+                  <div className="bg-white/70 backdrop-blur-md p-10 rounded-[3rem] border border-white/50 shadow-xl hover:shadow-2xl transition-all duration-500 group flex flex-col justify-between h-full">
                     <div>
                       <div className="text-accent text-4xl mb-6 opacity-30 group-hover:opacity-100 transition-opacity">&quot;</div>
                       <p className="text-slate-600 font-light text-lg mb-8 italic leading-relaxed">

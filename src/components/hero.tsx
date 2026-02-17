@@ -7,8 +7,8 @@ export function Hero() {
     return (
         <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-20">
             {/* Soft Orbs - Localized Refinements */}
-            <div className="absolute top-[-10%] right-[-10%] w-[70%] h-[70%] bg-primary/10 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2 animate-pulse-glow will-change-[opacity,filter]" />
-            <div className="absolute bottom-[-10%] left-[-10%] w-[60%] h-[60%] bg-secondary/10 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2 animate-pulse-glow will-change-[opacity,filter]" style={{ animationDelay: '2.5s' }} />
+            <div className="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-primary/10 rounded-full blur-[40px] translate-x-1/2 -translate-y-1/2 animate-pulse-glow will-change-[opacity]" />
+            <div className="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-secondary/10 rounded-full blur-[40px] -translate-x-1/2 translate-y-1/2 animate-pulse-glow will-change-[opacity]" style={{ animationDelay: '2.5s' }} />
 
             <Container className="relative z-10 text-center px-4">
                 <div className="inline-block mb-10 px-8 py-2.5 rounded-full bg-white/40 border border-slate-200 shadow-xl animate-slide-up group hover:scale-105 transition-transform duration-500 will-change-transform">

@@ -38,8 +38,8 @@ const config: Config = {
             },
             animation: {
                 "pulse-glow": "pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-                "glow-cycle": "glow-cycle 10s ease-in-out infinite",
-                "float": "float 6s ease-in-out infinite",
+                "glow-cycle": "glow-cycle 20s ease-in-out infinite",
+                "float": "float 12s ease-in-out infinite",
                 "slide-up": "slide-up 0.5s ease-out forwards",
             },
             keyframes: {
